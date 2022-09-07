@@ -1,0 +1,138 @@
+- var pageType = 'home';
+//- Для pageType указать тип страницы. Варианты:
+	home - главная страница
+	otzyvy -
+	faq -
+	gallery -
+	vnutr - простая внутренняя страница
+	adaptive-table
+	services - ?сделать
+	services-item - страница услуги
+	news - страница с новостями (раздел)
+	news-item - страница новости
+	actions - страница с новостями (раздел)
+	actions-item - страница акции
+
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body#top
+
+		//- home - главная страница
+		if pageType === 'home'
+			include ../includes/header
+			//- include ../includes/section-hero //- большой эффектный слайдер
+			include ../includes/slider-bigslider
+			include ../includes/services
+			include ../includes/section-about
+			include ../includes/section-faq
+			include ../includes/section-advantages
+			include ../includes/otzyvy
+
+		if pageType === 'otzyvy'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-otzyvy
+
+		if pageType === 'faq'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-faq
+
+		if pageType === 'gallery'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-gallery
+
+		if pageType === 'vnutr'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content
+
+		if pageType === 'adaptive-table'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/adaptive-table
+
+		if pageType === 'services'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					//- include ../includes/content-services
+					include ../includes/content-services2
+
+		if pageType === 'services-item'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-services-item
+
+		if pageType === 'news'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-news
+
+		if pageType === 'news-item'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-news-item
+
+		if pageType === 'actions'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-actions
+
+		if pageType === 'actions-item'
+			include ../includes/top-panel
+			include ../includes/header
+			.wrapper
+				include ../includes/breadcrumbs
+			.wrapper
+				main
+					include ../includes/content-actions-item
+
+		include ../includes/section-contacts
+		include ../includes/footer
+		include ../includes/help-panel
+		include ../includes/hidden
+
+		//- Подключаем скрипты и стили
+		include ../includes/sourse

@@ -1,0 +1,99 @@
+.hero {
+	position: relative;
+	padding: 300px 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	font-size: 0;
+	background-color: $color-akcent;
+	background-image: url('./../img/bg-top.jpg');
+	background-size: cover;
+	background-position: center center;
+	z-index: 0;
+
+	@media screen and (max-width: $break_md) {
+		padding: 200px 15px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		padding: 100px 15px;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		padding: 50px 15px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+	}
+
+	// &-wrapper {
+	// 	max-width: 1500px;
+	// 	margin: 0 auto;
+	// }
+
+	img {
+		width: 100%;
+	}
+
+	&-box {
+		position: absolute;
+		z-index: 3;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.4);
+		box-sizing: border-box;
+		padding: 35px 25px;
+		text-align: center;
+		color: $color-default;
+
+		@media screen and (max-width: $break_sm) {
+			//background-color: transparent;
+			position: relative;
+			transform: none;
+			max-width: initial;
+			left: 0;
+			top: 0;
+			// margin-top: -150px;
+		}
+	}
+
+	&-title {
+		margin: 0 0 15px 0;
+		font-weight: bold;
+		font-size: 38px;
+		color: $color-akcent;
+		border-bottom: 1px solid darken($color-akcent, 0%);
+
+		@media screen and (max-width: $break_md) {
+			font-size: 32px;
+		}
+
+		@media screen and (max-width: $break_sm) {
+			font-size: 28px;
+		}
+	}
+
+	&-descr {
+		@include pix-to-rem(20px);
+		color: #fff;
+		line-height: 1.25;
+		margin: 0;
+
+		@media screen and (max-width: $break_sm) {
+			font-size: 16px;
+		}
+	}
+}

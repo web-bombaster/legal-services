@@ -1,0 +1,24 @@
+/* ---------------------------------------------- /*
+ * Стили секции footer
+/* ---------------------------------------------- */
+
+footer {
+    display: block;
+    background-color: $bg5-color;
+    color: darken($bg2-color, 40%);
+    font-size: 14px;
+    padding: 50px 0;
+    text-align: center;
+
+    .copy {
+        @include pix-to-rem(12px);
+        line-height: 1.5;
+        // letter-spacing: 1px;
+        font-weight: 300;
+    }
+}
+
+.statistic {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+.otzyvlist {
+	&-box {
+	}
+
+	&-item {
+		padding: 15px;
+		box-sizing: border-box;
+		border: 1px solid $color-akcent4;
+		margin-bottom: 25px;
+	}
+
+	&-content {
+	}
+
+	&-descr {
+		margin-top: 15px;
+		margin-bottom: 5px;
+		text-align: right;
+		color: $color-akcent;
+	}
+
+	&-title {
+		// margin-top: 15px;
+		margin-bottom: 15px;
+		text-align: right;
+		font-weight: bold;
+	}
+}

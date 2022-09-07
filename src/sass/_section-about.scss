@@ -1,0 +1,97 @@
+.about {
+	background-image: url('./../img/bg-about.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 0;
+	position: relative;
+	margin-bottom: 45px;
+	margin-top: 25px;
+	//overflow: hidden;
+
+	&::before {
+		position: absolute;
+		top: -45px;
+		left: 50%;
+		transform: translateX(-50%);
+		content: '';
+		max-width: 1170px;
+		width: 100%;
+		height: 45px;
+		background-color: $color-akcent2;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -45px;
+		left: 50%;
+		transform: translateX(-50%);
+		content: '';
+		max-width: 1170px;
+		width: 100%;
+		height: 45px;
+		background-color: $color-akcent2;
+	}
+
+	&-box {
+		background-color: $color-akcent2;
+		color: #fff;
+		padding: 0px 70px;
+		overflow: hidden;
+		//display: flex;
+		//justify-content: space-between;
+
+		@media screen and (max-width: $break_xs) {
+			display: block;
+		}
+	}
+
+	h2 {
+		border: 0;
+		position: relative;
+		padding-bottom: 25px;
+		margin-top: 0;
+		color: #fff;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 50px;
+			height: 1px;
+			background-color: $color-akcent;
+			bottom: 0px;
+		}
+	}
+
+	&-img {
+		height: 300px;
+		width: 300px;
+		float: right;
+		//max-width: 100%;
+		margin-left: 25px;
+		background-image: url('./../img/about-img.jpg');
+		background-size: cover;
+		background-position: center center;
+		order: 2;
+		//overflow: hidden;
+
+		@media screen and (max-width: $break_sm) {
+			width: 200px;
+			height: 200px;
+			float: left;
+			margin-left: 0;
+			margin-right: 15px;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			float: none;
+			margin-right: 0;
+			margin-bottom: 25px;
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&-text {
+	}
+}

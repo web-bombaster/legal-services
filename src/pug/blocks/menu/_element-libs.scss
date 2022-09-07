@@ -1,0 +1,67 @@
+/* Мобильное меню
+  ========================================================================== */
+
+nav, .nav, #touch-menu {
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+}
+
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 15px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+	font-weight: 100;
+	font-size: 1.25rem;
+    line-height: 20px;
+	color: $color-akcent3;
+    outline: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+
+    @media screen and (max-width: $break_lg) {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+.nav li a:hover,
+.nav li.activ a {
+    color: lighten($color-akcent, 50%);
+}
+
+#touch-menu {
+    display: none;
+    border: 0;
+    border: 1px solid #eee;
+    background-color: transparent;
+    font-weight: bold;
+    color: $color-akcent3;
+    font-size: 18px;
+    letter-spacing: 7px;
+}
+
+@media screen and (max-width: $break_md) {
+	.nav {display: none;}
+	.nav li {display: block;}
+	.nav li a {
+		border-bottom: 1px solid #eee;
+		background: #fff;
+		color: #666;
+	}
+	#touch-menu {display: block;}
+}

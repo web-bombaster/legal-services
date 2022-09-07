@@ -1,0 +1,39 @@
+.circle3 {
+
+    &-slider {
+        text-align: center;
+    }
+
+    &-item {
+        box-sizing: border-box;
+        padding: 15px 15px 0;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+
+    &-img {
+        border-radius: 50%;
+        max-width: 200px;
+        margin: 0 auto 25px;
+
+        &:hover {
+            transform: scale(1.025);
+        }
+    }
+
+    &-name {
+        margin-bottom: 10px;
+        // font-weight: bold;
+    }
+
+    &-descr {
+        @include pix-to-rem(17px);
+        color: lighten($primary-color, 30%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        letter-spacing: 0;
+    }
+}

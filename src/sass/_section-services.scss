@@ -1,0 +1,58 @@
+.services {
+	text-align: center;
+
+	&-box {
+		@include row-flex();
+	}
+
+	&-item {
+		@include col();
+		@include size(6);
+		@include size-sm(12);
+		padding: 25px;
+		margin: 15px;
+		background-color: #fff;
+		text-align: left;
+	}
+
+	&-img {
+		margin-bottom: 15px;
+		font-size: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&-title {
+		margin: 0;
+		margin-bottom: 15px;
+		color: $color-akcent;
+		text-transform: uppercase;
+		@include pix-to-rem(24px);
+		font-weight: bold;
+		line-height: 1.25;
+	}
+
+	&-descr {
+		@include pix-to-rem(16px);
+		line-height: 1.25;
+
+		p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&-price {
+		@include pix-to-rem(24px);
+		// font-weight: 100;
+		// color: $color-akcent;
+	}
+
+	&-btn {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+	}
+}

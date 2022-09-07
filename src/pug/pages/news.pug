@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body.vnutr
+		//- include ../includes/preloader
+		include ../includes/header
+		include ../includes/menu-adaptiv
+
+		.wrapper
+			include ../includes/breadcrumbs
+			//- .row
+			main
+				.box-shadow
+					include ../includes/content-news
+					include ../includes/pagination
+
+			//- include ../includes/sidebar
+
+		include ../includes/section-news
+		include ../includes/footer
+		include ../includes/hidden
+
+	// Подключаем скрипты и стили
+	include ../includes/sourse

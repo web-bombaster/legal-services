@@ -1,0 +1,54 @@
+/* Слайдер сотрудников
+  ========================================================================== */
+
+.slick-slider {
+    z-index: 20;
+}
+
+.slick-next, .slick-prev {
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+
+    @media screen and (max-width: $break_sm) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+
+    @media screen and (max-width: $break_sm) {
+        font-size: 30px;
+    }
+}
+
+.slick-next {
+    right: 10px;
+
+    @media screen and (max-width: $break_sm) {
+        right: 0;
+    }
+}
+
+.slick-prev {
+    left: 10px;
+
+    @media screen and (max-width: $break_sm) {
+        left: 0;
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $color-akcent;
+}
+
+.slick-list {
+    margin: 0 65px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $break_sm) {
+        margin: 0 25px;
+    }
+}

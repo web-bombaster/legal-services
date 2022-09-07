@@ -1,0 +1,55 @@
+.action {
+	text-align: center;
+	// background-image: url('../img/spec.jpg');
+	// background-size: cover;
+	// background-position: top center;
+
+	&-img {
+		width: 100%;
+		max-width: 800px;
+		border: 3px solid $color-akcent;
+		margin-bottom: 15px;
+	}
+
+	.content {
+		@include col();
+		@include size(12);
+	}
+
+	&-date {
+		font-size: 28px;
+		display: block;
+		line-height: 1.25;
+		margin-bottom: 15px;
+	}
+
+	&-descr {
+		display: block;
+		margin: 0;
+		font-size: 22px;
+		line-height: 1.25;
+	}
+
+	.price {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 15px;
+		font-size: 42px;
+		font-weight: bold;
+		line-height: 1.25;
+		// color: $color-akcent;
+
+		@media screen and (max-width: $break_sm) {
+			@include pix-to-rem(32px);
+		}
+
+		@media screen and (max-width: $break_xs) {
+			@include pix-to-rem(28px);
+		}
+
+		strike {
+			font-weight: 100;
+			color: $color-default;
+		}
+	}
+}

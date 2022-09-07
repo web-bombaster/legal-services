@@ -1,0 +1,32 @@
+.btn {
+	display: inline-block;
+	//background-color: $color-akcent;
+	color: $color-akcent;
+	font-size: 16px;
+	// text-transform: uppercase;
+	padding: 12px 25px;
+	box-sizing: border-box;
+	border: 0;
+	//border-radius: 4px;
+	transition: .5s;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 35px;
+	line-height: 1;
+	border: 1px solid $color-akcent;
+
+	@media screen and (max-width: $break_md) {
+		font-size: 18px;
+	}
+
+	&:hover {
+		background-color: darken($color-akcent, 10%);
+		color: #fff;
+	}
+
+	&-box {
+		// margin-top: 25px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+}

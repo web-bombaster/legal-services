@@ -1,0 +1,55 @@
+// Переменные
+@import "vars";
+
+// Смартгрид и свои миксины
+@import '_smart-grid';
+@import '_mixins/mixins'; // свои миксины
+
+// Нормализация
+@import '_normalize';
+
+// Стандартности
+@import '_preloader'; // Прелоадер
+@import '_adaptiv-video'; // Адаптивное видео
+@import '_form'; // Формы
+@import "_gallery";
+@import "_adaptiv-tables";
+@import "_imgPost";
+@import '_pagination'; // Постраничная навигация
+@import '_breadcrumbs'; // Постраничная навигация
+@import "_ukrasheniya"; // Украшения текста - списки, цитаты и пр.
+@import "_docs";
+@import '_button'; // Кнопки
+@import '_section-news'; // Новости
+
+// Стили текущего проекта
+@import "_top-panel";
+@import "_header";
+@import "_section-hero";
+@import "_menu-adaptiv";
+// @import "_services";
+@import "_services2";
+@import "_section-about";
+@import "_section-faq";
+@import "_accordeon";
+@import "_section-advantages";
+@import "_otzyvy";
+@import "_actions";
+@import "_bigslider";
+@import "_content-otzyvy";
+@import "_footer";
+@import "_section-contacts";
+@import "_section-bottom";
+@import "_help-panel";
+
+// Библиотеки и их кастомизация
+// @import '_libs'; // Импортируем стили подключенных библиотек
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import '_custom-popup'; // Кастомизация стилей попапов
+@import "../libs/slick-carousel/slick/slick.scss"; // slick
+@import "../libs/slick-carousel/slick/slick-theme.scss"; // slick
+@import '_custom-slick'; // Кастомизация стилей слайдера
+// @import "../libs/font-awesome-4.7.0/css/font-awesome.css";
+
+// Свои общие стили
+@import "_main";

@@ -1,0 +1,49 @@
+.otzyvy {
+	text-align: center;
+
+	.content {
+		@include col();
+		@include size(12);
+	}
+
+	&-slider {
+		width: 100%;
+		max-width: 650px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-item {
+		text-align: center;
+		padding-left: 25px;
+		padding-right: 25px;
+		box-sizing: border-box;
+	}
+
+	&-wrok {
+		display: block;
+		color: $color-akcent;
+		margin-bottom: 10px;
+	}
+
+	&-name {
+		display: block;
+	}
+
+	.slick-next {
+		right: -25px;
+
+		@media screen and (max-width: $break_md) {
+			right: 0px;
+		}
+	}
+
+	.slick-prev {
+		left: -25px;
+
+		@media screen and (max-width: $break_md) {
+			left: 0px;
+		}
+	}
+}

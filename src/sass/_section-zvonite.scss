@@ -1,0 +1,39 @@
+.action {
+	background-color: $bgcolor-02;
+	text-align: center;
+
+	h2 {
+		max-width: 700px;
+		margin: 0 auto 25px;
+		// color: $color-default;
+	}
+
+	&-box {
+		max-width: 400px;
+		margin: auto;
+
+		a {
+			text-decoration: none;
+			color: rgba($color-default, .85);
+			font-weight: normal;
+			@include pix-to-rem(24px);
+			display: inline-block;
+		}
+
+		.top-tel {
+			&:before {
+				content: '';
+				position: relative;
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 5px;
+				top: 3px;
+				background-image: url(../img/icons/phone-call.svg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+	}
+}

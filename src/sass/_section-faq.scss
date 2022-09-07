@@ -1,0 +1,52 @@
+.faq {
+	padding-top: 60px;
+	padding-bottom: 80px;
+
+	&-box {
+		font-size: 0;
+	}
+
+	&-img {
+		display: inline-block;
+		width: 50%;
+		@include pix-to-rem(14px);
+
+		@media screen and (max-width: $break_md) {
+			display: block;
+			width: 100%;
+			max-width: 655px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		img {
+			width: 100%;
+
+			@media screen and (max-width: $break_md) {
+				height: 350px;
+				width: auto;
+			}
+
+			@media screen and (max-width: $break_xs) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&-descr {
+		display: inline-block;
+		width: 50%;
+		@include pix-to-rem(14px);
+		vertical-align: top;
+
+		@media screen and (max-width: $break_md) {
+			display: block;
+			width: 100%;
+			max-width: 655px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+// Дополнительные стили для всплывающих окон, вызванных через ajax
+
+.mfp-close-btn-in .mfp-close {
+	color: $color-akcent;
+}
+
+.ajax-content {
+	width: auto;
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+	background-color: #fff;
+
+	.mfp-close,
+	.mfp-close:active {
+		right: -15px;
+		top: -40px;
+	}
+}
+
+// Дополнительные стили для всплывающих окон
+.white-popup-block {
+	background: #fff;
+	padding: 20px 30px;
+	// text-align:left;
+	max-width: 400px;
+	margin: 40px auto;
+	position: relative;
+
+	// .mfp-close {
+	// 	color: #ccc;
+	// }
+}

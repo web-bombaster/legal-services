@@ -1,0 +1,37 @@
+.comments {
+    &-slider {
+        margin: 25px auto;
+        max-width: 900px;
+    }
+
+    &-item {
+
+    }
+
+    &-img {
+        border-radius: 50%;
+        margin: 15px auto 25px;
+        // padding-top: 15px;
+        max-width: 132px;
+    }
+
+    &-name {
+        @include pix-to-rem(32px);
+        margin-bottom: 15px;
+    }
+
+    &-speciality {
+        @include pix-to-rem(17px);
+        color: lighten($primary-color, 30%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        letter-spacing: 0;
+        margin-bottom: 25px;
+    }
+
+    &-descr {
+        p {
+            margin: 12px 0;
+        }
+    }
+}

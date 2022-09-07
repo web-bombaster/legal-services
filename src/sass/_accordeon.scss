@@ -1,0 +1,45 @@
+.accordeon {
+	margin-bottom: 0px;
+	margin-top: 25px;
+
+	.item {
+		margin-bottom: 5px;
+		margin-top: 5px;
+
+		.header {
+			position: relative;
+			z-index: 0;
+			cursor: pointer;
+			box-sizing: border-box;
+			padding: 15px 40px 15px 15px;
+			background-color: $color-akcent2;
+			//@include pix-to-rem(15px);
+			line-height: 1.25;
+			color: #fff;
+			font-weight: bold;
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 25px;
+				height: 25px;
+				right: 12px;
+				top: 12px;
+				background-image: url('./../img/icons/down-arrow.svg');
+				background-size: cover;
+				z-index: 1;
+			}
+		}
+
+		.descr {
+			padding: 15px 15px 25px;
+			@include pix-to-rem(13px);
+		}
+
+		.redmore {
+			display: block;
+			margin-top: 10px;
+			//@include pix-to-rem(15px);
+		}
+	}
+}

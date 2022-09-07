@@ -1,0 +1,18 @@
+form#form.form.ajax_form.af_example.form-top.zvonok(method='post', action='')
+    .form-box
+        .w50
+            label.control-label(for='af_name')
+                | Ваше имя
+                span.error_name
+            input#af_name(type='text', name='name', value='')
+        .w50
+            label.control-label(for='af_mail')
+                | Ваш e-mail
+                span.error_mail
+            input#af_mail(type='text', name='mail', value='')
+        .w100
+            label.control-label(for='af_text')
+                | Ваше сообщение
+                span.error_text
+            textarea#af_text(type='text', name='text', value='')
+            button.submit(name='submit', type='submit') Отправить

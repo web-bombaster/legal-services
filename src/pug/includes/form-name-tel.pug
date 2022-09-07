@@ -1,0 +1,31 @@
+form#zayavka.form.ajax_form.af_example.form-top.zayavka(method='post', action='')
+	h3.text-center Заказать звонок
+	//- label.control-label(for='af_name')
+		| Ваше имя
+	.before.name
+		input.jsFormText(type='text', name='name', value='', placeholder="Ваше имя", required="")
+
+	//- label.control-label(for='af_phone')
+		| Котактный телефон
+	.before.phone
+		input.jsFormPhone(type='text', name='phone', value='', placeholder="Контактный телефон", required="")
+
+
+
+	label.control-label.polytic(for='zayavka-polytic')
+		input#zayavka-polytic.polytic.jsFormCheckbox(name='soglasie', type='checkbox', value='yes', required="")
+		| Даю согласие на обработку моих персональных данных на условиях, указанных в&#32;
+		a(href='#') Политике конфиденциальности
+
+	//- span(title='Обязательно для заполнения') *
+	//- |  Даю согласие на обработку моих персональных данных на условиях, указанных в
+	//- a(href='#') Политике конфиденциальности
+
+	//- p.polytic
+	//- 	input(type='checkbox', name='soglasie', value='yes', required="")
+	//- 	span(title='Обязательно для заполнения') *
+	//- 	|  Даю согласие на обработку моих персональных данных на условиях, указанных в
+	//- 	a(href='#') Политике конфиденциальности
+
+	//- button.btn.submit(name='submit', type='submit', disabled) Отправить
+	button.btn.submit(name='submit', type='button') Отправить

@@ -1,0 +1,41 @@
+.advantage {
+    text-align: center;
+
+    .row {
+        @include row-flex();
+        justify-content: center;
+    }
+
+
+    main {
+        @include col();
+        @include size(12);
+    }
+
+    .btn {
+        margin-bottom: 95px;
+    }
+}
+
+.advantage-item {
+    @include col();
+    @include size(4);
+    @include size-sm(6);
+    @include size-xs(12);
+    padding-top: 25px;
+    box-sizing: border-box;
+
+    .icon {
+        font-size: 100px;
+        color: $color-akcent;
+        display: block;
+        line-height: 0;
+        margin-bottom: 25px;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+}

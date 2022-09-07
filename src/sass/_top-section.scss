@@ -1,0 +1,32 @@
+.top-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+.top-section-img {
+    @include col();
+    @include size(7);
+    @include size-sm(12);
+    position: relative;
+
+    img {
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 8px;
+
+        @media screen and (max-width: $break_sm) {
+            position: relative;
+            transform: none;
+            top: 0;
+        }
+    }
+}
+
+.top-section-form {
+    @include col();
+    @include size(5);
+    @include size-sm(12);
+}

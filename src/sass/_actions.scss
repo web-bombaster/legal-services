@@ -1,0 +1,76 @@
+.actions {
+	position: relative;
+	text-align: center;
+	//box-shadow: 0 0 30px rgba(18, 59, 109, .3);
+	//padding: 0px 25px 25px 25px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	border-top: 1px dashed rgba(0, 0, 0, .2);
+
+	h2 {
+		text-align: left;
+		margin-top: 15px;
+	}
+
+	&-box {
+		text-align: left;
+		@include row-flex;
+		justify-content: flex-start;
+		// text-align: center;
+	}
+
+	&-item {
+		@include col();
+		@include size(4);
+		@include size-sm(12);
+		max-width: 400px;
+		margin-bottom: 25px;
+		padding-bottom: 15px;
+		border-bottom: 1px dashed rgba(0, 0, 0, .2);
+
+		@media screen and (max-width: $break_sm) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		& a {
+			text-decoration: none;
+		}
+	}
+
+	&-img {
+		width: 100%;
+		margin-bottom: 10px;
+		box-shadow: 0px 0px 3px 0px #353535;
+	}
+
+	&-title {
+		// font-family: $font-akcent;
+		text-transform: uppercase;
+		@include pix-to-rem(18px);
+		color: $color-akcent;
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+
+	&-date {
+		@include pix-to-rem(14px);
+		color: $color-default;
+	}
+
+	.btn {
+		position: absolute;
+		top: 11px;
+		right: 25px;
+		margin: 0;
+		padding: 15px 25px 13px;
+		letter-spacing: 1px;
+
+		@media screen and (max-width: $break_sm) {
+			position: relative;
+			top: initial;
+			right: initial;
+			display: inline-block;
+		}
+	}
+}

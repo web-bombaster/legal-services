@@ -1,0 +1,89 @@
+/* ---------------------------------------------- /*
+ * Стили меню
+/* ---------------------------------------------- */
+
+nav, .nav {
+    z-index: 1000 !important;
+}
+
+.nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+
+    @media (max-width: $break_sm) {
+        display: none;
+    }
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+    z-index: 1001;
+
+    @media (max-width: $break_sm) {
+        display: block;
+    }
+
+    &.activ a {
+        color: $color-akcent;
+        text-decoration: underline;
+    }
+}
+
+.nav li a {
+	display: block;
+	padding: 18px 15px;
+    text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+    line-height: 20px;
+	color: $color-default;
+    // letter-spacing: 3px;
+    outline: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @media (max-width: $break_sm) {
+        padding: 10px 15px;
+        border-bottom: 1px solid $color-akcent3;
+		// background: $color-akcent;
+    }
+
+    :hover {
+        color: $color-akcent;
+        text-decoration: underline;
+    }
+
+}
+
+#touch-menu {
+    display: none;
+    background-color: $color-akcent3;
+    border: 0;
+    border-bottom: 1px solid $color-akcent;
+	padding: 18px 15px;
+    text-decoration: none;
+    text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+    line-height: 20px;
+	color: $color-default;
+    // letter-spacing: 3px;
+    outline: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1000 !important;
+
+    @media (max-width: $break_sm) {
+        display: block;
+        padding: 10px 15px;
+    }
+}
+
+

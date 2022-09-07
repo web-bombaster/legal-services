@@ -1,0 +1,205 @@
+/* pdf */
+a[href$=".pdf"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/pdf.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* документ MS*/
+a[href$=".doc"],
+a[href$=".docx"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/doc.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* таблица MS*/
+a[href$=".csv"],
+a[href$=".xls"],
+a[href$=".xlsx"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/excel.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* презентация MS*/
+a[href$=".ppt"],
+a[href$=".pptx"],
+a[href$=".odp"],
+a[href$=".dps"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/ppt.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* документа в формате бесплатных офисных программ .odt, .wps*/
+a[href$=".wps"],
+a[href$=".odt"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/document.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* таблицы в формате бесплатных офисных программ .ods, .et*/
+a[href$=".et"],
+a[href$=".ods"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/table.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* архивы */
+a[href$=".7z"],
+a[href$=".zip"],
+a[href$=".gzip"],
+a[href$=".zip"],
+a[href$=".gz"],
+a[href$=".rar"],
+a[href$=".sh"],
+a[href$=".tar"],
+a[href$=".tar-gz"],
+a[href$=".tgz"],
+a[href$=".zipx"],
+a[href$=".ace"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/compress.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* текстовые файлы */
+a[href$=".txt"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/txt.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+
+/* картинки */
+a[href$=".webp"],
+a[href$=".jpg"],
+a[href$=".jpeg"],
+a[href$=".jpe"],
+a[href$=".jfif"],
+a[href$=".png"],
+a[href$=".gif"],
+a[href$=".eps"],
+a[href$=".ico"],
+a[href$=".cdr"],
+a[href$=".psd"],
+a[href$=".ai"],
+a[href$=".raw"],
+a[href$=".svg"],
+a[href$=".jxr"],
+a[href$=".hdp"],
+a[href$=".wdp"],
+a[href$=".jp2"],
+a[href$=".j2k"],
+a[href$=".jpf"],
+a[href$=".jpm"],
+a[href$=".jpg2"],
+a[href$=".j2c"],
+a[href$=".bmp"],
+a[href$=".tif"],
+a[href$=".tiff"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/docs/img.svg');
+		position: absolute;
+		left: 0;
+	}
+}

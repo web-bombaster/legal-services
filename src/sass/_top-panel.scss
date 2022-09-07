@@ -1,0 +1,64 @@
+.top-panel {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: inset 0px -1px 0px rgba(155, 155, 155, 0.25);
+	font-weight: 600;
+	@media screen and (max-width: $break_md) {
+		text-align: center;
+	}
+
+	&__tel {
+		position: relative;
+		display: inline-block;
+		padding-left: 22px;
+		margin-right: 15px;
+
+		@media screen and (max-width: $break_xxs) {
+			margin-right: 0;
+		}
+
+		&::before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 15px;
+			height: 15px;
+			top: 5px;
+			left: 0;
+			background-image: url(./../img/icons/phone.svg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		a {
+			text-decoration: none;
+			color: lighten($color-default, 30%);
+		}
+	}
+
+	&__mail {
+		position: relative;
+		display: inline-block;
+		padding-left: 22px;
+
+		&::before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 15px;
+			height: 15px;
+			top: 5px;
+			left: 0;
+			background-image: url(./../img/icons/mail.svg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		a {
+			color: lighten($color-default, 30%);
+			text-decoration: none;
+		}
+	}
+}

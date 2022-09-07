@@ -1,0 +1,40 @@
+.advantages {
+	padding-top: 120px;
+	padding-bottom: 70px;
+	background: linear-gradient(rgba(16, 18, 28, 0.83), rgba(16, 18, 28, 0.83)),
+		url('./../img/bg-advantages.jpg') center / cover no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	color: #ffffff;
+
+	&-container {
+		@include row-flex;
+		justify-content: center;
+	}
+
+	&-item {
+		@include col();
+		@include size(3);
+		@include size-sm(6);
+		@include size-xs(12);
+		margin-bottom: 50px;
+	}
+
+	&-img {
+		margin-bottom: 15px;
+
+		img {
+			height: 40px;
+		}
+	}
+
+	&-number {
+		margin-bottom: 10px;
+		font-family: $font-akcent;
+		@include pix-to-rem(38px);
+		line-height: 1;
+	}
+
+	&-descr {
+	}
+}

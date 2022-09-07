@@ -1,0 +1,24 @@
+.about-video {
+    text-align: center;
+    background-image: url("./../img/bg-about-video.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f43b76;
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .container h2 {
+        color: $btn-bg;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+    img {
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.form {
+	background-color: $color-akcent4;
+	// background-image: url('./../img/bg01.jpg');
+	// background-size: cover;
+	// background-position: center center;
+	padding: 20px;
+	color: #000;
+	font-size: 18px;
+	line-height: 1.25;
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 25px;
+		@include pix-to-rem(32px);
+		text-transform: uppercase;
+		font-weight: normal;
+		line-height: 1.25;
+		background-color: transparent;
+
+		span {
+			display: block;
+			text-transform: none;
+			@include pix-to-rem(22px);
+		}
+	}
+
+	a {
+		color: lighten(#000, 20%);
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	input {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 0px auto;
+		color: $color-default;
+		border: 1px solid $color-akcent;
+		background-color: $color-akcent3;
+		border-radius: 4px;
+		padding: 14px 14px 14px 58px;
+		box-sizing: border-box;
+		outline: none;
+		font-size: 16px;
+		font-weight: normal;
+
+		&::placeholder {
+			color: lighten($color-default, 30%);
+		}
+
+		&[type=checkbox] {
+			display: inline-block;
+			width: auto;
+			margin-right: 10px;
+			margin-bottom: auto;
+		}
+
+		&.error {
+			margin-top: 5px;
+			&::after {
+				display: none;
+			}
+		}
+
+		&.error[type=checkbox] {
+			box-shadow: 0px 0px 0px 2px lighten($color-error, 15%);
+		}
+	}
+
+	textarea {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		height: 100px;
+		resize: none;
+		background-color: $color-akcent3;
+		border: 1px solid $color-akcent;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 14px 14px 14px 58px;
+		outline: none;
+		color: $color-default;
+		font-size: 16px;
+		font-weight: normal;
+
+		&::placeholder {
+			color: lighten($color-default, 30%);
+		}
+	}
+
+	.before {
+		position: relative;
+		margin-bottom: 15px;
+		border-radius: 4px;
+		// overflow: hidden;
+
+		&:before {
+			position: absolute;
+			content: '';
+			border-radius: 4px 0px 0px 4px;
+			left: 1px;
+			top: 1px;
+			width: 46px;
+			height: 46px;
+			background-size: 20px 20px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 10;
+			background-color: darken($color-akcent3, 7%);
+		}
+
+		&.name:before {
+			background-image: url('./../img/icons/black-user.svg');
+		}
+
+		&.phone:before {
+			background-image: url('./../img/icons/black-phone.svg');
+		}
+
+		&.mail:before {
+			background-image: url('./../img/icons/black-mail.svg');
+		}
+
+		&.comment:before {
+			background-image: url('./../img/icons/black-comments.svg');
+		}
+
+		// .error {
+		// 	box-shadow: isset 0px 0px 0px 2px lighten($color-error, 15%);
+		// }
+	}
+
+	.error {
+		color: lighten($color-error, 15%);
+		position: relative;
+		margin-top: 30px;
+		background-color: lighten($color-error, 40%);
+		// border: 1px solid lighten($color-error, 15%);
+		// box-shadow: isset 0px 0px 5px 5px lighten($color-error, 15%);
+
+		input {
+			background-color: lighten($color-error, 45%);
+
+			&::placeholder {
+				color: lighten($color-default, 30%);
+			}
+		}
+
+		textarea {
+			background-color: lighten($color-error, 45%);
+
+			&::placeholder {
+				color: lighten($color-default, 30%);
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: 'Поле содержит ошибку!';
+			top: -20px;
+			left: 0;
+			@include pix-to-rem(14px);
+			color: lighten($color-error, 15%);
+		}
+	}
+
+	.btn {
+		display: block;
+		background-color: darken(#fff, 70%);
+		color: #fff;
+		transition: .5s;
+		margin: 0 auto;
+		padding: 15px 30px;
+		outline: none;
+
+		&:hover {
+			background-color: darken(#fff, 85%);
+		}
+	}
+
+	.polytic {
+		display: block;
+		margin-bottom: 25px;
+		font-size: 14px;
+		color: lighten(#000, 20%);
+	}
+}
+
+.top-form-text {
+	margin-bottom: 25px;
+}
+
+.mfp {
+	&-content {
+		.form {
+			max-width: 400px;
+			margin: auto;
+			position: relative;
+
+			input {
+				width: 100%;
+
+				&[type=checkbox] {
+					display: inline-block;
+					width: auto;
+					margin-right: 10px;
+					margin-bottom: auto;
+				}
+			}
+		}
+	}
+
+	&-close {
+		color: $color-akcent;
+	}
+}

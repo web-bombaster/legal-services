@@ -1,0 +1,56 @@
+.shema {
+	&-box {
+		@include row-flex();
+	}
+
+	&-item {
+		@include col();
+		@include size(4);
+		@include size-sm(12);
+		position: relative;
+		padding: 65px 35px 35px 35px;
+		margin: 45px 15px 15px 15px;
+		background-color: #fff;
+		border: dashed 1px #ccc;
+		text-align: center;
+		line-height: 1.25;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 78px;
+			height: 78px;
+			border-radius: 50%;
+			top: -39px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			background-color: $color-akcent;
+			background-size: 40px 40px;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		&__01::before {
+			background-image: url('./../img/icons/roulette.svg');
+		}
+
+		&__02::before {
+			background-image: url('./../img/icons/contract.svg');
+		}
+
+		&__03::before {
+			background-image: url('./../img/icons/toolbox.svg');
+		}
+
+		&__title {
+			@include pix-to-rem(20px);
+			font-weight: bold;
+			// margin-bottom: 15px;
+		}
+
+		&__descr {
+		}
+	}
+}

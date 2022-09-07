@@ -1,0 +1,48 @@
+footer {
+	display: block;
+	background-color: $color-akcent2;
+	text-align: center;
+	color: $color-akcent4;
+	padding: 35px 15px;
+	box-sizing: border-box;
+
+	@media screen and (max-width: $break_sm) {
+		padding: 35px 15px 77px 15px;
+	}
+
+	.arrow-top {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		width: 40px;
+		height: 40px;
+		border: 10px solid $color-akcent;
+		box-sizing: border-box;
+		background-color: $color-akcent;
+		background-image: url('./../img/icons/up-arrow.svg');
+		background-size: cover;
+	}
+
+	a {
+		color: $color-akcent;
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		line-height: 1.25;
+		font-size: 14px;
+	}
+
+	img {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.razr {
+		color: $color-akcent4;
+		margin-bottom: 0;
+		@include pix-to-rem(12px);
+	}
+}

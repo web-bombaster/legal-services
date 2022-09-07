@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@mixin pix-to-rem($px) {
+    font-size: math.div($px, $font-size-default) * 1rem;
+}

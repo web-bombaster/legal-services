@@ -1,0 +1,49 @@
+main .pagination {
+	display: block;
+	// width: 100%;
+	padding: 0;
+}
+
+div.pagination {
+	display: block;
+	margin-top: 35px;
+	text-align: center;
+	padding: 0;
+}
+
+ul.pagination li {
+	display: inline-block;
+
+	&::before {
+		content: '';
+		padding: 0;
+		display: none;
+	}
+
+	&.active a,
+	&.active span {
+		background-color: $color-akcent;
+	}
+}
+
+.pagination a,
+.pagination span {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: lighten($color-akcent, 10%);
+	color: #fff;
+	padding: 5px 10px;
+	box-shadow: 0 0 3px 0px #000;
+}
+
+.pagination span {
+	background-color: $bgcolor-02;
+	color: $color-default;
+	cursor: default;
+}
+
+.pagination .active a,
+.pagination a:hover {
+	background-color: rgba($color-akcent, .8);
+}

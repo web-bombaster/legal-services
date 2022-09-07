@@ -1,0 +1,168 @@
+/* ---------------------------------------------- /*
+ * Стили шапки сайта
+/* ---------------------------------------------- */
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: $min-height-header;
+  z-index: 0;
+  background-image: url('./../img/bg-header.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  @media screen and (max-width: $break_sm) {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 80px;
+    padding-top: 75px;
+  }
+}
+
+
+.header {
+
+  &-box {
+    display: block;
+    max-width: 700px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: rgba(47, 46, 46, 0.7);
+    border-radius: 8px;
+
+    @media screen and (max-width: $break_sm) {
+      position: relative;
+      max-width: 80%;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 0 auto 25px;
+    }
+  }
+
+  &-logo {
+    margin-bottom: 25px;
+    border-radius: 50%;
+
+    @media screen and (max-width: $break_sm) {
+      width: 100px;
+    }
+  }
+
+  &-sitename {
+    @include pix-to-rem(64px);
+    line-height: 1.25;
+    text-shadow: 0px 0px 5px #000;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
+
+    @media screen and (max-width: $break_md) {
+      @include pix-to-rem(44px);
+    }
+
+    @media screen and (max-width: $break_sm) {
+      @include pix-to-rem(34px);
+    }
+
+    span {
+      display: block;
+      @include pix-to-rem(22px);
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+
+      @media screen and (max-width: $break_sm) {
+        @include pix-to-rem(18px);
+      }
+    }
+
+  }
+
+  &-phone {
+    @include pix-to-rem(38px);
+    font-weight: bold;
+    line-height: 1.25;
+
+    @media screen and (max-width: $break_md) {
+      @include pix-to-rem(32px);
+    }
+
+    @media screen and (max-width: $break_sm) {
+      @include pix-to-rem(28px);
+    }
+
+    @media screen and (max-width: $break_xs) {
+      @include pix-to-rem(24px);
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0px 0px 5px #000;
+      letter-spacing: 2px;
+    }
+  }
+
+}
+
+
+
+
+
+/* ---------------------------------------------- /*
+ * Мышка в шапке сайта
+/* ---------------------------------------------- */
+
+.mouse-icon {
+  width: 24px;
+  height: 39px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -14px;
+  text-align: center;
+  z-index: 5;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.mouse-wheel {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  margin: 2px auto 0;
+  display: block;
+  background: #fff;
+  animation: up-down 1.5s ease-in-out infinite;
+}
+
+@keyframes up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0
+  }
+  30% {
+    opacity: 1
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0
+  }
+}
+
+/* ---------------------------------------------- /*
+ * Хедер для внутренних страниц
+/* ---------------------------------------------- */

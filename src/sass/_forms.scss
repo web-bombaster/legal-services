@@ -1,0 +1,105 @@
+/* ---------------------------------------------- /*
+ * Стили для форм
+/* ---------------------------------------------- */
+
+.form {
+	background-color: $color-akcent3;
+	background-image: url('./../img/bg-contackts.jpg');
+	background-position: bottoom right;
+	background-size: cover;
+	padding: 25px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.form span {
+	color: #ff4a4a;
+}
+
+.form h3 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.form label {
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	margin: 0px auto 20px;
+	border: 1px solid darken($color-akcent3, 10%);
+	border-radius: 4px;
+	padding: 15px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 16px;
+	font-weight: normal;
+
+	&[type=checkbox] {
+		display: inline-block;
+		width: auto;
+		margin-right: 10px;
+		margin-bottom: auto;
+	}
+}
+
+.form textarea {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	margin: 0px auto 20px;
+	border: 1px solid darken($color-akcent3, 10%);
+	border-radius: 4px;
+	padding: 15px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.form textarea {
+	resize: none;
+	height: 150px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+	color: lighten($color-default, 70%);
+}
+
+.form .btn {
+	margin-top: 0;
+}
+
+.top-form-text {
+	margin-bottom: 25px;
+}
+
+.mfp-content .form {
+	max-width: 500px;
+	margin: auto;
+	position: relative;
+}
+
+// .mfp-content .form input {
+//   width: 100%;
+// }
+
+// .mfp-close-btn-in .mfp-close {
+//     color: #fff;
+// }
+
+body .ajax_form .error {
+	color: #ff4a4a;
+}

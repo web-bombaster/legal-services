@@ -1,0 +1,21 @@
+// Шрифты
+$font-default: 'Roboto', sans-serif;
+$font-size-default: 16px;
+
+
+// Цвета
+$primary-color: #000;
+$color-akcent: #2f2e2e; // темный серый
+$bg2-color: #f5f5f5;
+$bg3-color: #03a6c8; // Синий
+$bg4-color: #ffb731; // Оранжевый
+$bg5-color: #181818; // Темный серый для футера
+$bg6-color: #70c3d3; // Голубоватый для секции контактов
+
+// Кнопки
+$btn-bg: #ffe32c; // Фон кнопки - желтый
+$btn-text-color: #000; // Цвет текста кнопки
+
+// Дополнительные настройки
+$min-height-header: 710px; // Минимальная высота слайдера хедера
+$brs: 4px; // скругление углов

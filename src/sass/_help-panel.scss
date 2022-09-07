@@ -1,0 +1,46 @@
+.help-panel {
+	position: fixed;
+	right: 0;
+	bottom: 25px;
+
+	@media screen and (max-width: $break_sm) {
+		bottom: 0px;
+		left: 0;
+		background-color: rgba(lighten($color-default, 72%), .8);
+		text-align: center;
+		line-height: 0;
+	}
+
+	.item {
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: $color-akcent;
+		margin: 10px;
+		border: 6px solid $color-akcent;
+		padding: 5px;
+		box-sizing: border-box;
+		background-size: cover;
+		background-position: center center;
+		//border-radius: 50%;
+
+		@media screen and (max-width: $break_sm) {
+			display: inline-block;
+			margin: 6px 5px;
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.arrow-top {
+		background-image: url('./../img/icons/up-arrow.svg');
+	}
+
+	.tel {
+		background-image: url('./../img/icons/phone-white.svg');
+	}
+
+	.mail {
+		background-image: url('./../img/icons/mail-white.svg');
+	}
+}

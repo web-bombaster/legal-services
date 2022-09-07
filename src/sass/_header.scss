@@ -1,0 +1,49 @@
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	//background-color: lighten($color-akcent, 72%);
+	box-shadow: inset 0 -1px 0 rgba(155, 155, 155, .25);
+
+	@media screen and (max-width: $break_md) {
+		padding-bottom: 0;
+	}
+
+	&-logo {
+		line-height: 1.25;
+		max-width: 390px;
+		@include pix-to-rem(25px);
+		font-family: $font-akcent;
+
+		@media screen and (max-width: $break_md) {
+			width: 100%;
+			max-width: none;
+			margin-bottom: 25px;
+			text-align: center;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-akcent2;
+		}
+
+		span {
+			display: block;
+			font-family: $font-default;
+			@include pix-to-rem(13px);
+			color: $color-default;
+			margin-top: 5px;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: $break_md) {
+			display: block;
+			padding: 0;
+		}
+	}
+}
